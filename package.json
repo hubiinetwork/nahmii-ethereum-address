@@ -1,37 +1,50 @@
 {
-  "name": "@hubiinetwork/ethereum-address",
-  "version": "1.0.0",
-  "description": "A small utility for parsing, validating and converting ethereum addresses",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hubiinetwork/ethereum-address.git"
-  },
-  "keywords": [
-    "hubii",
-    "ethereum",
-    "address",
-    "parser",
-    "validator",
-    "converter",
-    "mongo",
-    "bson",
-    "binary",
-    "utility",
-    "js",
-    "nodejs"
-  ],
-  "author": "Morten Fjeldstad <morten@hubii.com>",
-  "license": "LGPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/hubiinetwork/ethereum-address/issues"
-  },
-  "homepage": "https://github.com/hubiinetwork/ethereum-address#readme",
-  "devDependencies": {
-    "@hubiinetwork/eslint-config": "github:hubiinetwork/eslint-config",
-    "eslint": "^5.9.0"
-  }
+    "name": "@hubiinetwork/ethereum-address",
+    "version": "1.0.0",
+    "description": "A small utility for parsing, validating and converting ethereum addresses",
+    "main": "index.js",
+    "scripts": {
+        "test": "nyc mocha lib/**/*.spec.js --exit",
+        "test:watch": "nyc mocha lib/**/*.spec.js --exit --watch",
+        "lint": "eslint --ignore-path .gitignore ."
+    },
+    "pre-commit": [
+        "lint",
+        "test"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hubiinetwork/ethereum-address.git"
+    },
+    "keywords": [
+        "hubii",
+        "ethereum",
+        "address",
+        "parser",
+        "validator",
+        "converter",
+        "mongo",
+        "bson",
+        "binary",
+        "utility",
+        "js",
+        "nodejs"
+    ],
+    "author": "Morten Fjeldstad <morten@hubii.com>",
+    "license": "LGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/hubiinetwork/ethereum-address/issues"
+    },
+    "homepage": "https://github.com/hubiinetwork/ethereum-address#readme",
+    "devDependencies": {
+        "@hubiinetwork/eslint-config": "github:hubiinetwork/eslint-config",
+        "chai": "^4.2.0",
+        "eslint": "^5.9.0",
+        "mocha": "^5.2.0",
+        "nyc": "^13.1.0",
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {
+        "bson": "^3.0.2"
+    }
 }
