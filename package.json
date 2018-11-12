@@ -29,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/hubiinetwork/ethereum-address/issues"
   },
-  "homepage": "https://github.com/hubiinetwork/ethereum-address#readme"
+  "homepage": "https://github.com/hubiinetwork/ethereum-address#readme",
+  "devDependencies": {
+    "@hubiinetwork/eslint-config": "github:hubiinetwork/eslint-config",
+    "eslint": "^5.9.0"
+  }
 }
