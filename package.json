@@ -1,0 +1,33 @@
+{
+  "name": "@hubiinetwork/ethereum-address",
+  "version": "1.0.0",
+  "description": "A small utility for parsing, validating and converting ethereum addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubiinetwork/ethereum-address.git"
+  },
+  "keywords": [
+    "hubii",
+    "ethereum",
+    "address",
+    "parser",
+    "validator",
+    "converter",
+    "mongo",
+    "bson",
+    "binary",
+    "utility",
+    "js",
+    "nodejs"
+  ],
+  "author": "Morten Fjeldstad <morten@hubii.com>",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hubiinetwork/ethereum-address/issues"
+  },
+  "homepage": "https://github.com/hubiinetwork/ethereum-address#readme"
+}
