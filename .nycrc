@@ -16,7 +16,7 @@
         "lcov",
         "text"
     ],
-    "check-coverage": false,
+    "check-coverage": true,
     "per-file": true,
     "lines": 100,
     "statements": 100,
