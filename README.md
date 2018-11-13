@@ -5,7 +5,7 @@ ethereum address.
 
 ## Installation
 
-    npm install @hubiinetwork/ethereum-address
+    npm install nahmii-ethereum-address
 
 ## Usage
 
@@ -13,7 +13,7 @@ Creating a new address from a string:
 
 ```javascript
 
-    const EthereumAddress = require('@hubiinetwork/ethereum-address';
+    const EthereumAddress = require('nahmii-ethereum-address';
 
     let addr = EthereumAddress.from('0x0011223344556677889900112233445566778899');
 
