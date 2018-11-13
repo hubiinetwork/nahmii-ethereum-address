@@ -1,5 +1,5 @@
 {
-    "name": "@hubiinetwork/ethereum-address",
+    "name": "nahmii-ethereum-address",
     "version": "1.0.0",
     "description": "A small utility for parsing, validating and converting ethereum addresses",
     "main": "index.js",
@@ -18,6 +18,7 @@
     },
     "keywords": [
         "hubii",
+        "nahmii",
         "ethereum",
         "address",
         "parser",
