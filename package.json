@@ -1,6 +1,6 @@
 {
     "name": "nahmii-ethereum-address",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A small utility for parsing, validating and converting ethereum addresses",
     "main": "index.js",
     "scripts": {
