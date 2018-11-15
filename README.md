@@ -13,7 +13,7 @@ Creating a new address from a string:
 
 ```javascript
 
-    const EthereumAddress = require('nahmii-ethereum-address';
+    const EthereumAddress = require('nahmii-ethereum-address');
 
     let addr = EthereumAddress.from('0x0011223344556677889900112233445566778899');
 
