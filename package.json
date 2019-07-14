@@ -4,9 +4,11 @@
     "description": "A small utility for parsing, validating and converting ethereum addresses",
     "main": "index.js",
     "scripts": {
-        "test": "nyc mocha lib/**/*.spec.js --exit",
-        "test:watch": "nyc mocha lib/**/*.spec.js --exit --watch",
-        "lint": "eslint --ignore-path .gitignore ."
+        "test": "NODE_PATH=$npm_package_peerInstallOptions_prefix/node_modules nyc mocha lib/**/*.spec.js --exit",
+        "test:watch": "npm run test -- --watch",
+        "lint": "eslint --ignore-path .gitignore .",
+        "lint:fix": "npm run lint -- --fix",
+        "postinstall": "bash -c \"if [[ '$npm_config_production' == 'true' || '$npm_config_only' == prod* ]] ; then exit 0 ; else npx npm-install-peers ; fi\""
     },
     "pre-commit": [
         "lint",
@@ -40,13 +42,19 @@
     "devDependencies": {
         "@hubiinetwork/eslint-config": "github:hubiinetwork/eslint-config",
         "chai": "^4.2.0",
-        "eslint": "^5.9.0",
-        "mocha": "^5.2.0",
-        "nyc": "^13.1.0",
+        "eslint": "^6.0.1",
+        "mocha": "^6.1.4",
+        "npm-install-peers": "^1.2.1",
+        "nyc": "^14.1.1",
         "pre-commit": "^1.2.2",
         "sinon": "^7.1.1"
     },
-    "dependencies": {
-        "bson": "^3.0.2"
+    "dependencies": {},
+    "peerDependencies": {
+        "bson": "^4.0.0",
+        "ethers": "~4.0.0"
+    },
+    "peerInstallOptions": {
+        "prefix": "./peer_modules"
     }
 }
