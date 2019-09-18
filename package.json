@@ -16,7 +16,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hubiinetwork/ethereum-address.git"
+        "url": "git+https://github.com/hubiinetwork/nahmii-ethereum-address.git"
     },
     "keywords": [
         "hubii",
@@ -36,9 +36,9 @@
     "author": "Morten Fjeldstad <morten@hubii.com>",
     "license": "LGPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/hubiinetwork/ethereum-address/issues"
+        "url": "https://github.com/hubiinetwork/nahmii-ethereum-address/issues"
     },
-    "homepage": "https://github.com/hubiinetwork/ethereum-address#readme",
+    "homepage": "https://github.com/hubiinetwork/nahmii-ethereum-address#readme",
     "devDependencies": {
         "@hubiinetwork/eslint-config": "github:hubiinetwork/eslint-config",
         "chai": "^4.2.0",
