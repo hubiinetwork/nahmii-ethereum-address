@@ -4,7 +4,7 @@
     "description": "A small utility for parsing, validating and converting ethereum addresses",
     "main": "index.js",
     "scripts": {
-        "test": "NODE_PATH=$npm_package_peerInstallOptions_prefix/node_modules nyc mocha lib/**/*.spec.js --exit",
+        "test": "NODE_PATH=$npm_package_peerInstallOptions_prefix/node_modules nyc -a mocha lib/**/*.spec.js --exit",
         "test:watch": "npm run test -- --watch",
         "lint": "eslint --ignore-path .gitignore .",
         "lint:fix": "npm run lint -- --fix",
