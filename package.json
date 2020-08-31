@@ -1,14 +1,14 @@
 {
     "name": "nahmii-ethereum-address",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "description": "A small utility for parsing, validating and converting ethereum addresses",
     "main": "index.js",
     "scripts": {
-        "test": "NODE_PATH=$npm_package_peerInstallOptions_prefix/node_modules nyc mocha lib/**/*.spec.js --exit",
+        "test": "NODE_PATH=$npm_package_peerInstallOptions_prefix/node_modules nyc -a mocha lib/**/*.spec.js --exit",
         "test:watch": "npm run test -- --watch",
         "lint": "eslint --ignore-path .gitignore .",
         "lint:fix": "npm run lint -- --fix",
-        "postinstall": "bash -c \"if [[ '$npm_config_production' == 'true' || '$npm_config_only' == prod* ]] ; then exit 0 ; else npx npm-install-peers ; fi\""
+        "postinstall": "sh -c \"if [ '$npm_config_production' = 'true' ] || [ '$npm_config_only' = prod* ] ; then exit 0 ; else npx npm-install-peers ; fi\""
     },
     "pre-commit": [
         "lint",
